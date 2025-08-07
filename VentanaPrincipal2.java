@@ -102,11 +102,11 @@ public class VentanaPrincipal2 extends JFrame {
                     sql = "CALL PA_INSERTARPRODUCTO('1','ProductoMySQL',10,20)";
                     break;
                 case "Oracle":
-                    conexion = new ConexionOracle();
+                    conexion = (ConexionBaseDeDatos) new ConexionOracle();
                     sql = "CALL PA_INSERTARPRODUCTO('2','ProductoOracle',15,25)";
                     break;
                 case "PostgreSQL":
-                    conexion = new ConexionPostgresql();
+                    conexion = (ConexionBaseDeDatos) new ConexionPostgresql();
                     sql = "SELECT PA_INSERTARPRODUCTO('3','ProductoPostgres',30,40)"; // o CALL si ya es PROCEDURE
                     break;
                 case "SQL Server":
