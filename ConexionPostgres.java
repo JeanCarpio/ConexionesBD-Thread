@@ -28,7 +28,7 @@ public class ConexionPostgresql implements ConexionBaseDeDatos { // <-- AQUI SE 
             // Configuración de la conexión a la base de datos PostgreSQL
             String baseDeDatos = "jdbc:postgresql://localhost:5432/BDPRODUCTO";
             String user = "postgres";
-            String password = "12345";
+            String password = "123456";
             
             // Establece la conexión
             // --- CORRECCIÓN AQUÍ: Pasa el nombre de usuario (user) en lugar de la URL ---
